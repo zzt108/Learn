@@ -1,4 +1,4 @@
-<project site="mvc80" format="Zip Package" targetfilefolder="wwwroot">
+<project>
   <Metadata>
     <metadata>
       <PackageName>ScMvcTest2</PackageName>
@@ -20,6 +20,7 @@
       <Entries>
         <x-item>/master/sitecore/layout/Renderings/PageHeader/{44C7E8A4-66BE-489B-9540-64AC298CA448}/invariant/0</x-item>
         <x-item>/master/sitecore/layout/Layouts/Sample Layout/{14030E9F-CE92-49C6-AD87-7D49B50E42EA}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Hello World Controller Rendering/{4FC42E68-2D6D-419E-9446-AEDED58AFA88}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
