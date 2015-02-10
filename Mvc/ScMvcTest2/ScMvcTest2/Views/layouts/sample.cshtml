@@ -1,1 +1,5 @@
+@using Sitecore.Mvc
+
 <p>Today's date is: @DateTime.Now.ToShortDateString()</p>
+
+@Html.Sitecore().ViewRendering("/Views/PageHeader.cshtml")
