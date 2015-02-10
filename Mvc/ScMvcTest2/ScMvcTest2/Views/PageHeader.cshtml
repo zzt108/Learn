@@ -1,9 +1,10 @@
-﻿@using Sitecore.Mvc
+﻿@using Sitecore.Data.Fields
+@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
 @model RenderingModel
 @{
-
+    
 }
 <div>
-
+    @Model.Item.Name has a title of @Model.Item.Fields["Title"]
 </div>

@@ -2,4 +2,11 @@
   <PropertyGroup>
     <Site Server="mvc80" UserName="sitecore\admin" IsRemoteSitecore="True" />
   </PropertyGroup>
+  <File Include="App_Start\RouteConfig.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="packages.config" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Properties\AssemblyInfo.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Properties\PublishProfiles\Mvc80.pubxml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Views\layouts\sample.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="635588443353562440" ServerFileSize="57" IsConflict="True" ConflictResolution="NotResolved" />
+  <File Include="Views\PageHeader.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="635591716926575923" ServerFileSize="201" IsConflict="True" ConflictResolution="NotResolved" />
+  <File Include="Views\web.config" FileTimestamp="0" FileSize="0" ServerTimestamp="635588436151562457" ServerFileSize="1654" IsConflict="True" ConflictResolution="NotResolved" />
 </Project>
