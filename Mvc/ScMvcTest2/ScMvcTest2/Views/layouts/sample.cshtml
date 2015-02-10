@@ -1,8 +1,13 @@
 @using Sitecore.Mvc
+<html>
+<body>
+    <p>Today's date is: @DateTime.Now.ToShortDateString()</p>
 
-<p>Today's date is: @DateTime.Now.ToShortDateString()</p>
+    <header>
+        <h1>Page header - dynamic</h1>
+        @Html.Sitecore().Placeholder("pageHeader")
+    </header>
 
-<header>
-    <h1>Page header - dynamic</h1>
-    @Html.Sitecore().Placeholder("pageHeader")
-</header>
+</body>
+
+</html>

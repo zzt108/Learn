@@ -6,5 +6,6 @@
     
 }
 <div>
-    @Model.Item.Name has a title of @Model.Item.Fields["Title"]
+ @*   Ensure value editable in page editor*@
+    @Model.Item.Name has a title of @Html.Sitecore().Field("Title")
 </div>
