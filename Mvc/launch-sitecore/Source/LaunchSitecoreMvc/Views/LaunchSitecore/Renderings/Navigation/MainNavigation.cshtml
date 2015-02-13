@@ -1,0 +1,11 @@
+﻿@model MainNavigationList 
+
+@{
+    var navCssClass = "NavigationList";
+    var navId = "mainnav";    
+}
+
+<div id="myslidemenu" class="jqueryslidemenu">
+@Html.RenderNavigationList(Model.DisplayItems, Model.MaxDepth, navCssClass, navId) 
+<br style="clear: left" />
+</div>

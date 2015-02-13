@@ -1,0 +1,21 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    var i = Model.Item.GetInternalLinkItem("Link To");
+    
+    var learnMoreLink = i.GetLink();
+                                       
+    Sitecore.Data.Items.Item learnMoreItem = new CommonTextItem("Learn More").DisplayItem;    
+    
+}
+
+
+<div class="promospot">
+ <h2>@Html.Sitecore().Field("Title")</h2>
+ <div class="picture">@Html.Launch().Field("Image", null, new { @maxWidth = "195", @maxHeight = "106" })</div>
+ @Html.Sitecore().Field("Abstract")
+
+ <a href="@learnMoreLink" class="readmore">
+  @Html.Sitecore().Field("Text", learnMoreItem)
+ </a>
+
+</div>

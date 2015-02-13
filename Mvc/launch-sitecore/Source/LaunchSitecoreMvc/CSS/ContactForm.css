@@ -1,0 +1,14 @@
+﻿body {
+}
+
+FORM.contactForm { }
+FORM.contactForm DIV.formField LABEL { display: inline-block; float:left; width: 100px; }
+FORM.contactForm DIV.validation-summary-errors UL
+{
+    margin-left: 8px;
+    padding-left: 8px;
+}    
+FORM.contactForm DIV.validation-summary-errors UL LI
+{
+    list-style-type: disc;
+}    

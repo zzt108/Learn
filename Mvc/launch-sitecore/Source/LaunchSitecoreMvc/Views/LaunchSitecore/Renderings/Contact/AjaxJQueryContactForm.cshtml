@@ -1,0 +1,69 @@
+﻿@model ContactForm
+
+@{
+    var formId = "contactForm000";
+    
+    var formTagAttributes = new Dictionary<string, object>()
+    {
+        { "class", "contactForm" },
+        { "id", Html.AttributeEncode(formId) },
+        { "data-group", "jQuery" }
+    };
+    
+}
+
+
+
+@using (Html.BeginRouteForm(
+    Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName,
+    FormMethod.Post,
+    formTagAttributes
+))
+{
+    <text>
+
+    @Html.AntiForgeryToken()
+    
+    @if (Context.Request.HttpMethod == "POST")
+    {
+            <text>@Html.ValidationSummary("The following errors must be corrected before submitting the form")</text>
+    }
+    
+    @Html.Sitecore().FormHandler()
+        
+    @Html.HiddenFor(m => m.FormRenderingId)
+    
+    <div class="formField">
+        @Html.LabelFor(m => m.FirstName) 
+        @Html.EditorFor(m => m.FirstName)
+        @Html.ValidationMessageFor(m => m.FirstName, "*")
+    </div>
+    
+    
+    <div class="formField">
+        @Html.LabelFor(m => m.LastName) 
+        @Html.EditorFor(m => m.LastName)
+        @Html.ValidationMessageFor(m => m.LastName, "*")
+    </div>    
+    
+    <div class="formField">
+        @Html.LabelFor(m => m.Email) 
+        @Html.EditorFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email, "*")
+    </div>
+        
+    <div class="formField">
+        @Html.LabelFor(m => m.Question) 
+        @Html.EditorFor(m => m.Question)
+        @Html.ValidationMessageFor(m => m.Question, "*")
+    </div>        
+    <input type="submit" value="Submit" id="SubmitButton" />
+
+    </text>
+}
+    
+<h4>View Loaded: @Html.Encode(DateTime.Now.ToLongTimeString())</h4>
+
+
+
+

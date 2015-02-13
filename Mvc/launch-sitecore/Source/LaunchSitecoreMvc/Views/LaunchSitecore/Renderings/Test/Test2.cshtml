@@ -1,0 +1,28 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    
+    var countViewContext = Sitecore.Mvc.Common.ContextService.Get().GetInstances<ViewContext>().Count();
+
+    var topViewContext = Sitecore.Mvc.Common.ContextService.Get().GetInstances<ViewContext>().FirstOrDefault();  
+    
+}
+
+<ul>
+    <li>Test View Rendering 2</li>
+    <li>View Context Stack Size: @Html.Encode(countViewContext)</li>
+
+    
+    <li>ViewData Model Type: @Html.Encode(ViewData.Model.GetType())</li>
+    <li>ViewContext ViewData Model Type: @Html.Encode(ViewContext.ViewData.Model.GetType())</li>
+    <li>Top ViewContext ViewData Model Type: @Html.Encode(topViewContext.ViewData.Model.GetType())</li>
+
+
+    <li>ViewData Test String: @Html.Encode(ViewData["Test"])</li>
+    <li>ViewData Test2 String: @Html.Encode(ViewData["Test2"])</li>
+    <li>ViewContext.ViewData Test String: @Html.Encode(ViewContext.ViewData["Test"])</li>
+    <li>ViewContext.ViewData Test2 String: @Html.Encode(ViewContext.ViewData["Test2"])</li>
+    <li>Top ViewContext.ViewData Test String: @Html.Encode(topViewContext.ViewData["Test"])</li>
+    <li>Top ViewContext ViewData Test2 String: @Html.Encode(topViewContext.ViewData["Test2"])</li>
+</ul>
+

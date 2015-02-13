@@ -1,0 +1,22 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    
+    var i = Model.Item.GetInternalLinkItem("Call to Action Link");    
+    var callToActionLink = i.GetLink();                                       
+}
+
+<div class="demo_block">
+ <div class="left">
+  <div class="messaging">
+   <h1>@Html.Sitecore().Field("Title") </h1>
+   @Html.Sitecore().Field("Body")
+   <div class="links">   
+    <a href="@callToActionLink"><span class="left_bg"></span><span class="inner">
+        @Html.Sitecore().Field("Call to Action Text")
+     </span><span class="right_bg">&nbsp;</span></a>
+   </div>
+  </div>
+ </div>
+ <div class="right">@Html.Launch().Field("Image", null, new { @maxWidth = "364", @maxHeight = "219" })</div>
+ <div class="floatClear"></div>
+</div>

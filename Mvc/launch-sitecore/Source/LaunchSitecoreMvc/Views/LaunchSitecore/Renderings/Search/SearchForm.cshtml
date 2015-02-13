@@ -1,0 +1,15 @@
+﻿
+@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+{    
+    @Html.ValidationSummary()
+    
+    @Html.Sitecore().FormHandler()
+        
+    <div class="formField">
+    @Html.Label("SearchString", "Search") 
+        @Html.TextBox("SearchString", ViewData["SearchString"])
+        @Html.ValidationMessage("SearchString", "***")
+    </div>
+
+    <input type="submit" value="Search" />
+}

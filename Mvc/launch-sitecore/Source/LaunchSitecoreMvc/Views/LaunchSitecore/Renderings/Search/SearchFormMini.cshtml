@@ -1,0 +1,10 @@
+﻿@using (Html.BeginRouteForm(
+    Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, 
+    new { pathInfo = RenderingContext.Current.Rendering.Item.GetLink().TrimStart(new char[] { '/' }) }, 
+    FormMethod.Post))
+{   
+    <div class="searchwrapper">
+        @Html.TextBox("SearchString", ViewData["SearchString"] ?? "Search", new { @style = "font-weight: normal", @onblur = "submitSearch(this)", @onfocus = "clearSearch(this)" })
+        <input type="submit" value="&gt;" class="invisible" />
+    </div>
+}

@@ -1,0 +1,16 @@
+﻿@model EvaluatorList
+    @if (Model.DisplayItems != null && Model.DisplayItems.Length > 0)
+    {
+        var first = new HtmlString("first");            
+        <div id="Evaluators" class="eval_border">
+        @foreach (var evaluatorItem in Model.DisplayItems.Select((x, i) => new { Item = x, Index = i }))
+        {
+            <div class="tab @Html.WriteFirstRow(first, evaluatorItem.Index)">            
+            <h3><a href="@Html.Raw(evaluatorItem.Item.GetLink())">@Html.Sitecore().Field("Home Title", evaluatorItem.Item)</a></h3>
+            @Html.Sitecore().Field("Home Abstract", evaluatorItem.Item)
+            <a href="@Html.Raw(evaluatorItem.Item.GetLink())">@Html.Launch().Field("Image", evaluatorItem.Item, new { @class = "picture" })</a>
+            </div>
+        }
+        <div class="floatClear"></div>
+        </div>
+    }

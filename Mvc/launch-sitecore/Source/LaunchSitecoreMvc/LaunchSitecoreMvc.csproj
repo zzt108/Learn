@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9C13933-ED54-41F0-B122-BAF2A2D7E6CC}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LaunchSitecoreMvc</RootNamespace>
+    <AssemblyName>LaunchSitecoreMvc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>true</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=1.0.11220.104, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Glimpse.Core">
+      <HintPath>..\..\References\Glimpse.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.3.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Private\Lucene.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\References\Private\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="sitecore.mvc">
+      <HintPath>..\..\References\Private\sitecore.mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ItemExtensions">
+      <HintPath>..\..\References\Sitecore.ItemExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.WebPages.Administration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\NavigationBusiness.cs" />
+    <Compile Include="Common\FormControllerContext.cs" />
+    <Compile Include="Controllers\ContactFormController.cs" />
+    <Compile Include="Controllers\AjaxContactFormController.cs" />
+    <Compile Include="Controllers\CustomController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\SearchIndexController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\StandardController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Helpers\LaunchHelper.cs" />
+    <Compile Include="Helpers\NavigationExtensions.cs" />
+    <Compile Include="Helpers\CustomerID.cs" />
+    <Compile Include="Models\Abstract\AbstractItem.cs" />
+    <Compile Include="Models\Abstract\AbstractItemList.cs" />
+    <Compile Include="Models\Base\WestBaseModel.cs" />
+    <Compile Include="Models\CommonModels\RenderingCustomItem.cs" />
+    <Compile Include="Models\CommonModels\SiteQueriesTextItem.cs" />
+    <Compile Include="Models\Lists\EvaluatorList.cs" />
+    <Compile Include="Models\Abstract\FeaturedAbstractList.cs" />
+    <Compile Include="Models\CommonModels\CommonTextItem.cs" />
+    <Compile Include="Models\CommonModels\SearchTextItem.cs" />
+    <Compile Include="Models\CommonModels\TextItem.cs" />
+    <Compile Include="Models\Contact\ContactForm.cs" />
+    <Compile Include="Models\Lists\GlossaryList.cs" />
+    <Compile Include="Models\Lists\RelatedItemsList.cs" />
+    <Compile Include="Models\Navigation\BreadcrumbNavigationList.cs" />
+    <Compile Include="Models\CommonModels\NavigationItem.cs" />
+    <Compile Include="Models\Navigation\SecondaryNavigationList.cs" />
+    <Compile Include="Models\Navigation\MainNavigationList.cs" />
+    <Compile Include="Models\CommonModels\FormRenderingModel.cs" />
+    <Compile Include="Models\Search\SearchResultItems.cs" />
+    <Compile Include="Models\Search\SearchResults.cs" />
+    <Compile Include="Models\Test\TestCustomItem.cs" />
+    <Compile Include="Pipelines\Loaders\InitRoutes.cs" />
+    <Compile Include="Pipelines\Response\RenderRendering\CacheKeyCheckProcessor.cs" />
+    <Compile Include="Pipelines\Response\RenderRendering\CustomExecuteRenderer.cs" />
+    <Compile Include="Pipelines\Response\RenderRendering\PostProcessHtmlWriter.cs" />
+    <Compile Include="Pipelines\Response\RenderRendering\TraceProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Sitecore.Mvc.LaunchSitecore.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Scripts\jquery-2.0.0.intellisense.js" />
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="CSS\ContactForm.css" />
+    <Content Include="Scripts\ContactForm.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-2.0.0.js" />
+    <Content Include="Scripts\jquery-2.0.0.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\SearchTextBox.js" />
+    <Content Include="Views\LaunchSitecore\Renderings\Navigation\Breadcrumbs.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Navigation\MainNavigation.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Navigation\SecondaryNavigation.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Lists\AbstractList.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Lists\FeaturedItemsList.cshtml" />
+    <None Include="PageContext.cd" />
+    <None Include="RenderingClasses.cd" />
+    <Content Include="Views\LaunchSitecore\Renderings\Search\SearchForm.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Search\SearchResults.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Contact\ContactForm.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Search\SearchFormMini.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Contact\ContactFormSuccess.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Lists\GlossaryList.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Lists\RelatedArticlesList.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Lists\EvaluatorList.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\LaunchSitecore\_ViewStart.cshtml" />
+    <Content Include="Views\LaunchSitecore\Shared\Error.cshtml" />
+    <Content Include="Views\LaunchSitecore\Shared\_Layout.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Customer\CustomerList.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Customer\CustomerDetails.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Customer\CustomerEdit.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Contact\AjaxContactForm.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Contact\AjaxContactFormSuccess.cshtml" />
+    <Content Include="Scripts\jquery-2.0.0.min.map" />
+    <Content Include="Views\LaunchSitecore\Renderings\Contact\AjaxPlaceholder.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Contact\AjaxJQueryContactForm.cshtml" />
+    <Content Include="Views\LaunchSitecore\Layouts\TestView.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Test\Test.cshtml" />
+    <Content Include="Views\LaunchSitecore\Renderings\Test\Test2.cshtml" />
+    <None Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Layouts\MainView.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\SubLayouts\Main\FullTitleWithSingleColumn.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\SubLayouts\Main\FullTitleWithRightSidebarAndContent.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\SubLayouts\Main\FullTitleWithLeftSidebarAndContent.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\SubLayouts\Main\FullRightSidebarWithTitleAndContent.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\SubLayouts\Main\FullLeftSidebarWithTitleAndContent.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Content\BodyContent.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Content\ContentWithImage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Content\AbstractSpot.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Content\Biography.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Content\PromoSpotWithLargeImage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Content\PromoSpotWithThumbnail.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Content\TermDetails.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Banners\ContributorBanner.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Banners\PageBannerWithAbstract.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Banners\PageBanner.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\Renderings\Banners\RedPageBanner.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LaunchSitecore\SubLayouts\Partial\ThreeColumn.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50781</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
