@@ -1,7 +1,0 @@
-syntax: glob
-References/Private
-Packages/*.zip
-Source/LaunchSitecoreMvc.BuildOutput/*
-Source/LaunchSitecoreMvc.IntermediateOutput/*
-Source/LaunchSitecoreMvc/bin/*
-Source/LaunchSitecoreMvc/obj/*
