@@ -1,0 +1,12 @@
+﻿@using Sitecore.Mvc
+
+@{
+    ViewBag.Title = "ContentPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ContentPage</h2>
+
+<div class="@Model.Title.ToLower()">
+    <h1>@Html.Sitecore().Field("Title")</h1>
+</div>
