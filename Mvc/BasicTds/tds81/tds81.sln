@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tds81.web", "tds81.web\tds81.web.csproj", "{FC41645E-8F39-4E4A-98C6-502A03F9FA6A}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "tds81.TDS.master", "tds81.TDS.master\tds81.TDS.master.scproj", "{60686DF3-439E-4C58-B939-C0BD268B3FDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{FC41645E-8F39-4E4A-98C6-502A03F9FA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC41645E-8F39-4E4A-98C6-502A03F9FA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC41645E-8F39-4E4A-98C6-502A03F9FA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60686DF3-439E-4C58-B939-C0BD268B3FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60686DF3-439E-4C58-B939-C0BD268B3FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60686DF3-439E-4C58-B939-C0BD268B3FDD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{60686DF3-439E-4C58-B939-C0BD268B3FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60686DF3-439E-4C58-B939-C0BD268B3FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60686DF3-439E-4C58-B939-C0BD268B3FDD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
