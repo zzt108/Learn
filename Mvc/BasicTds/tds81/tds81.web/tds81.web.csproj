@@ -209,6 +209,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Layouts\Home.cshtml" />
     <Content Include="Views\Layouts\ContentPage.cshtml" />
+    <Content Include="Views\Carousel\Carousel11.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -8,9 +8,11 @@
 <h2>ContentPage</h2>
 
 @*
-    Default Model: Model.Title.ToLower()
-    'Sitecore.Mvc.Presentation.RenderingModel' does not contain a definition for 'Title'*@
+       Default Model: Model.Title.ToLower()
+    Sitecore automatically passes an instance of the Sitecore.Mvc.Presentation.RenderingModel class to the view, so you can access two main properties of interest: Item and PageItem.
 
-<div class="@Model.ToString()">
+*@
+
+<div class="@Model.Item.">
     <h1>@Html.Sitecore().Field("Title", Sitecore.Context.Item)</h1>
 </div>
