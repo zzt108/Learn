@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {838FA434-DC22-4EC2-A01B-EE123C26E1A0}
+id: {13594CA6-AC18-457C-873C-0B856BC018ED}
 database: master
-path: /sitecore/content/Home/Services
+path: /sitecore/content/Home/Carousel12
 parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
-name: Services
+name: Carousel12
 master: {00000000-0000-0000-0000-000000000000}
 template: {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
 templatekey: Sample Item
@@ -15,14 +15,14 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-500
+200
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 133
+content-length: 312
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{54ED83D6-DCD6-4A38-BDA9-F9DCFE8087A6}" /></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{0296DD16-76FB-484A-9107-9FC172417EB3}"><r uid="{43222D12-08C9-453B-AE96-D406EBB95126}"><p:d /></r><r uid="{CF044AD9-0332-407A-ABDE-587214A2C808}"><p:d /></r><r uid="{B343725A-3A93-446E-A9C8-3A2CBD3DB489}"><p:d /></r></d></r>
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -33,22 +33,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 81227641-65ef-4d5c-98f8-212051d608f3
+revision: b3c981ed-dd60-416b-9e06-72a82052966b
 
 ----field----
 field: {75577384-3C97-45DA-A847-81B00500E250}
 name: Title
 key: title
-content-length: 8
+content-length: 10
 
-Services
+Carousel12
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150521T153818Z
+20150524T124327Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-81227641-65ef-4d5c-98f8-212051d608f3
+b3c981ed-dd60-416b-9e06-72a82052966b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150524T142057:635680740573361017Z
+20150524T142339:635680742194116748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

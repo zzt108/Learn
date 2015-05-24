@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {73A8F7AE-819A-4583-9D08-E0777AE38663}
+database: master
+path: /sitecore/content/Home/Carousel12/c02
+parent: {13594CA6-AC18-457C-873C-0B856BC018ED}
+name: c02
+master: {00000000-0000-0000-0000-000000000000}
+template: {D97FB387-62D9-41A8-A4DC-0AAE2634BF5A}
+templatekey: CarousselTemplate
+
+----version----
+language: en
+version: 1
+revision: 445e4c35-fde7-4dbc-b9a1-4be5da4c1bdb
+
+----field----
+field: {BFB7BD0D-9380-43DE-8D7E-296D7C624980}
+name: Header
+key: header
+content-length: 3
+
+c02
+----field----
+field: {23963D74-8C24-4518-81F9-9608D3342B02}
+name: SubHead
+key: subhead
+content-length: 3
+
+c02
+----field----
+field: {B5D68B85-F0A8-4119-A600-9717B509B42A}
+name: Background
+key: background
+content-length: 58
+
+<image mediaid="{6A32B50A-B56C-42AC-BE9E-5427038F97D9}" />
+----field----
+field: {9A6B6D87-4F5E-41DF-9818-84E00BBF84A2}
+name: CallToAction
+key: calltoaction
+content-length: 137
+
+<link text="" linktype="internal" class="" title="" target='Active Browser' querystring="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150524T125229Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+445e4c35-fde7-4dbc-b9a1-4be5da4c1bdb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150524T125513:635680689138700264Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

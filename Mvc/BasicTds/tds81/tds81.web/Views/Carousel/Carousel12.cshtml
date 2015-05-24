@@ -1,15 +1,15 @@
 ﻿@using Sitecore.Mvc
+@model tds81.web.Models.Carousel12RenderingModel
 
 @{
-    ViewBag.Title = "Carousel11";
+    ViewBag.Title = "Carousel12";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*See http://www.matthewdresser.com/sitecore/carousel-sitecore-mvc-(part-1-view-renderings) for documentation*@
+<h2>Carousel12</h2>
 
-<h2>Carousel11</h2>
 <div class="carousel">
-    @foreach (var carouselSlide in Model.Item.Children)
+    @foreach (var carouselSlide in Model.CarouselSlides)
     {
         <div class="carousel-slide">
             <div class="carousel-slide-content">
