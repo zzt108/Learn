@@ -7,6 +7,10 @@
 
 <h2>ContentPage</h2>
 
-<div class="@Model.Title.ToLower()">
-    <h1>@Html.Sitecore().Field("Title")</h1>
+@*
+    Default Model: Model.Title.ToLower()
+    'Sitecore.Mvc.Presentation.RenderingModel' does not contain a definition for 'Title'*@
+
+<div class="@Model.ToString()">
+    <h1>@Html.Sitecore().Field("Title", Sitecore.Context.Item)</h1>
 </div>
